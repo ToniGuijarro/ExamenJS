@@ -6,8 +6,12 @@ function factorial(){
     var entrada=_id("entradaFactorial").value;
     var operaciones="";
     var resultado=1;
-    for(var i=entrada;i>0;i--)
-    
+    for(var i=entrada;i>0;i--){
+        resultado = resultado *i;
+        resultado = operaciones+=i+"*"
+    }
+    _id("resultatFactorial").innerHTML=resultado;
+    _id("operacionsFactorial").innerHTML=operaciones;
 }
 
 function calculaIVA(){
